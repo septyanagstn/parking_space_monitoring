@@ -8,6 +8,8 @@ from util import get_parking_spots_bboxes, empty_or_not
 # Streamlit UI untuk memilih CCTV Video
 st.title("Pemantauan Tempat Parkir")
 
+st.caption("Silahkan pilih kamera yang akan dipantau")
+
 video_option = st.selectbox("Pilih CCTV Video", ["CCTV Video 1", "CCTV Video 2"])
 
 # Tentukan mask_path dan video_path berdasarkan pilihan CCTV Video
